@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 10%;
+            height: 200px;
+            display: none;
+            margin: auto;
+        }
+
+        body {
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            position: relative;
+
+        }
+
+        #velg {
+            width: 15%;
+            height: 75px;
+            background-color: rgba(56, 61, 61, 0.839);
+            border-radius: 20px;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+
+        }
+
+        #Hit {
+            width: 15%;
+            height: 75px;
+            background-color: rgba(56, 61, 61, 0.839);
+            border-radius: 20px;
+            display: none;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+
+        }
+
+        #sum {
+            width: 15%;
+            height: 75px;
+            background-color: rgba(56, 61, 61, 0.839);
+            border-radius: 20px;
+            display: none;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .midt {
+            display: flex;
+            justify-content: center;
+            height: 300px;
+            align-items: center;
+
+        }
+
+        #stand {
+            width: 15%;
+            height: 75px;
+            background-color: rgba(56, 61, 61, 0.839);
+            border-radius: 20px;
+            display: none;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        #sum2 {
+            width: 15%;
+            height: 75px;
+            background-color: rgba(56, 61, 61, 0.839);
+            border-radius: 20px;
+            display: none;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .lys body {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="midt">
+
+        <div id="velg">
+
+        </div>
+        <div id="stand"></div>
+        <div id="Hit"></div>
+
+        <div id="sum"></div>
+        <div id="sum2"></div>
+    </div>
+
+    <img src="1_of_spades.png" class="kort spades-1" id="spades-1">
+    <img src="2_of_spades.png" class="kort spades-2" id="spades-2">
+    <img src="3_of_spades.png" class="kort spades-3" id="spades-3">
+    <img src="4_of_spades.png" class="kort spades-4" id="spades-4">
+    <img src="5_of_spades.png" class="kort spades-5" id="spades-5">
+    <img src="6_of_spades.png" class="kort spades-6" id="spades-6">
+    <img src="7_of_spades.png" class="kort spades-7" id="spades-7">
+    <img src="8_of_spades.png" class="kort spades-8" id="spades-8">
+    <img src="9_of_spades.png" class="kort spades-9" id="spades-9">
+    <img src="10_of_spades.png" class="kort spades-10" id="spades-10">
+    <img src="11_of_spades.png" class="kort spades-11" id="spades-11">
+    <img src="12_of_spades.png" class="kort spades-12" id="spades-12">
+    <img src="13_of_spades.png" class="kort spades-13" id="spades-13">
+
+    <!-- Kløver (Clubs) -->
+    <img src="1_of_clubs.png" class="kort clubs-1" id="clubs-1">
+    <img src="2_of_clubs.png" class="kort clubs-2" id="clubs-2">
+    <img src="3_of_clubs.png" class="kort clubs-3" id="clubs-3">
+    <img src="4_of_clubs.png" class="kort clubs-4" id="clubs-4">
+    <img src="5_of_clubs.png" class="kort clubs-5" id="clubs-5">
+    <img src="6_of_clubs.png" class="kort clubs-6" id="clubs-6">
+    <img src="7_of_clubs.png" class="kort clubs-7" id="clubs-7">
+    <img src="8_of_clubs.png" class="kort clubs-8" id="clubs-8">
+    <img src="9_of_clubs.png" class="kort clubs-9" id="clubs-9">
+    <img src="10_of_clubs.png" class="kort clubs-10" id="clubs-10">
+    <img src="11_of_clubs.png" class="kort clubs-11" id="clubs-11">
+    <img src="12_of_clubs.png" class="kort clubs-12" id="clubs-12">
+    <img src="13_of_clubs.png" class="kort clubs-13" id="clubs-13">
+
+    <!-- Hjerter (Hearts) -->
+    <img src="1_of_hearts.png" class="kort hearts-1" id="hearts-1">
+    <img src="2_of_hearts.png" class="kort hearts-2" id="hearts-2">
+    <img src="3_of_hearts.png" class="kort hearts-3" id="hearts-3">
+    <img src="4_of_hearts.png" class="kort hearts-4" id="hearts-4">
+    <img src="5_of_hearts.png" class="kort hearts-5" id="hearts-5">
+    <img src="6_of_hearts.png" class="kort hearts-6" id="hearts-6">
+    <img src="7_of_hearts.png" class="kort hearts-7" id="hearts-7">
+    <img src="8_of_hearts.png" class="kort hearts-8" id="hearts-8">
+    <img src="9_of_hearts.png" class="kort hearts-9" id="hearts-9">
+    <img src="10_of_hearts.png" class="kort hearts-10" id="hearts-10">
+    <img src="11_of_hearts.png" class="kort hearts-11" id="hearts-11">
+    <img src="12_of_hearts.png" class="kort hearts-12" id="hearts-12">
+    <img src="13_of_hearts.png" class="kort hearts-13" id="hearts-13">
+
+    <!-- Ruter (Diamonds) -->
+    <img src="1_of_diamonds.png" class="kort diamonds-1" id="diamonds-1">
+    <img src="2_of_diamonds.png" class="kort diamonds-2" id="diamonds-2">
+    <img src="3_of_diamonds.png" class="kort diamonds-3" id="diamonds-3">
+    <img src="4_of_diamonds.png" class="kort diamonds-4" id="diamonds-4">
+    <img src="5_of_diamonds.png" class="kort diamonds-5" id="diamonds-5">
+    <img src="6_of_diamonds.png" class="kort diamonds-6" id="diamonds-6">
+    <img src="7_of_diamonds.png" class="kort diamonds-7" id="diamonds-7">
+    <img src="8_of_diamonds.png" class="kort diamonds-8" id="diamonds-8">
+    <img src="9_of_diamonds.png" class="kort diamonds-9" id="diamonds-9">
+    <img src="10_of_diamonds.png" class="kort diamonds-10" id="diamonds-10">
+    <img src="11_of_diamonds.png" class="kort diamonds-11" id="diamonds-11">
+    <img src="12_of_diamonds.png" class="kort diamonds-12" id="diamonds-12">
+    <img src="13_of_diamonds.png" class="kort diamonds-13" id="diamonds-13">
+
+    <script>
+
+        const kortVerdier = {
+            1: 1, 2: 2, 3: 3, 4: 4, 5: 5,
+            6: 6, 7: 7, 8: 8, 9: 9, 10: 10,
+            11: 10, 12: 10, 13: 10
+        };
+
+        let sum = 0;
+        let sumBoks = document.getElementById("sum");
+
+
+        let hitElm = document.getElementById("Hit")
+        let start = document.getElementById("velg")
+        let standElm = document.getElementById("stand")
+        let kortposisjon = 1000
+        let kortposisjon2 = 300
+        let sumDeal = 0
+        let sum2 = 0;
+        let sumBoks2 = document.getElementById("sum2")
+
+
+
+        start.addEventListener("click", function () {
+            hitElm.style.display = "block"
+            hitElm.innerHTML = "HIT"
+            standElm.style.display = "block"
+            standElm.innerHTML = "STAND"
+            sumBoks.style.display = "block"
+            sumBoks2.style.display = 'block'
+            start.style.display = "none"
+
+
+            sum += kortVerdier[tilfTall];
+            sumBoks.innerHTML = sum;
+
+            sum2 += kortVerdier[tilfTall];
+            sumBoks2.innerHTML = sum2;
+
+        });
+
+
+
+
+        let haveDealtCard = false
+
+
+        hitElm.addEventListener("click", function () {
+            const tilfTall = Math.floor(Math.random() * 13) + 1
+            const suits = ["spades", "hearts", "clubs", "diamonds"]
+            let i = Math.floor(Math.random() * suits.length);
+            const suit = suits[i] // i er en tilfeldig indeks
+            const bilde = document.createElement("img")
+            bilde.src = "kortstokk-kopi 2/" + tilfTall + "_of_" + suit + ".png"
+            bilde.style.position = "absolute";
+            bilde.style.left = kortposisjon + 'px';
+            bilde.style.top = "500px";
+            document.body.appendChild(bilde)
+            bilde.style.display = "block"
+
+            kortposisjon += 25
+
+            if (haveDealtCard == false) {
+                dealerCard(true)
+                haveDealtCard = true
+            }
+
+
+            sum += kortVerdier[tilfTall];
+            sumBoks.innerHTML = sum;
+
+            if (sum > 21) {
+                sumBoks.innerHTML = sum + " - BUST!";
+
+            }
+
+            if (sum == 21) {
+                sumBoks.innerHTML = "BLACKJACK"
+            }
+
+
+
+        })
+
+        standElm.addEventListener("click", function () {
+            dealerCard()
+        })
+
+        function dealerCard(oneCardOnly = false) {
+            if (sumDeal < 17) {
+                const tilfTall = Math.floor(Math.random() * 13) + 1
+                const suits = ["spades", "hearts", "clubs", "diamonds"]
+                let i = Math.floor(Math.random() * suits.length);
+                const suit = suits[i] // i er en tilfeldig indeks
+                const bilde = document.createElement("img")
+                bilde.src = "kortstokk-kopi 2/" + tilfTall + "_of_" + suit + ".png"
+                bilde.style.position = "absolute"
+                bilde.style.top = "500px"
+                bilde.style.left = kortposisjon2 + 'px'
+                document.body.appendChild(bilde)
+                bilde.style.display = "block"
+
+                kortposisjon2 += 25
+                sumDeal += kortVerdier[tilfTall]
+
+                sum2 += kortVerdier[tilfTall];
+                sumBoks2.innerHTML = sum2;
+
+                if (oneCardOnly == false) {
+                    setTimeout(dealerCard, 500)
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
