@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
+    <title>Towers</title>
+    <link rel="stylesheet" href="towers.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>🟩Towers💣</h1>
+        <p> velg<br>
+            vanskelighetsgrad <br> under
+
+
+        </p>
+    </header>
+
+    <main class="container">
+
+        <div class="kontroller">
+            <label for="nivaa">Velg nivå:</label>
+            <select id="nivaa">
+                <option value="lett">Lett (5 ruter)</option>
+                <option value="medium" selected>Medium (3 ruter)</option>
+                <option value="vanskelig">Vanskelig (2 ruter)</option>
+            </select>
+
+            <button id="startBtn">Start spillet</button>
+        </div>
+
+        <div id="brett" class="brett"></div>
+
+    </main>
+
+    <script src="towers.js"></script>
+</body>
+
+</html>
