@@ -78,6 +78,8 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    border-bottom: solid rgb(74, 223, 208);
+    border-radius: 20px;
 
  }
 
@@ -88,10 +90,11 @@
      letter-spacing: 6px;
      align-items: center;
      text-align: center;
+   
  }
 
 
- .games {
+ .games{
      padding: 60px 20px;
      display: flex;
      justify-content: center;
@@ -99,11 +102,21 @@
      flex-wrap: wrap;
  }
 
+ .game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
  .game h3{
     font-family:'Orbitron', monospace;
     letter-spacing:3px;
     color:#00f5ff;
-    font-size:22px;
+    font-size:40px;
+    border: solid rgb(255, 61, 245);
+    text-align: center;
+    padding: 20px;
 }
 
 
@@ -112,15 +125,17 @@
     font-family:'Orbitron', monospace;
     padding:10px 30px;
     border:none;
-    background:#0000009a;
+    background:#6d12669a;
     color:white;
     cursor:pointer;
     border-radius:5px;
+    width: 200px;
+    
     transition:all 0.4s;
 }
 
 .play-btn:hover{
-    background:#000000;
+    background:#ff0eff;
     transform:scale(1.05);
 }
 
@@ -154,22 +169,6 @@
      border-radius: solid rgb(100, 208, 220);
      border-color: #c230af;
      transform: translate(0, -8px);
- }
-
-
- .game-card button {
-     font-family: 'Orbitron', monospace;
-     padding: 10px 25px;
-     border: none;
-     background: #0000009a;
-     color: white;
-     cursor: pointer;
-     border-radius: 5px;
-     transition: all 0.5s;
- }
-
- .game-card button:hover {
-     background: #000000;
  }
 
 
