@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #24324a;
+    color: white;
+}
+
+.header {
+    background-color: #1a2538;
+    padding: 15px;
+    text-align: center;
+
+}
+
+
+.header a {
+    color: #cdd6f4;
+    text-decoration: none;
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.kontroller {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #3c4f7a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f65a0;
+}
+
+.brett {
+    background-color: #2f3f60;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.rad {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.rute {
+    height: 50px;
+    background-color: #3c4f7a;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rute:hover {
+    background-color: #4f65a0;
+}
