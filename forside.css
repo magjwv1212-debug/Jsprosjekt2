@@ -28,6 +28,19 @@
      gap: 15px;
  }
 
+ 
+ .logoer{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logoer i{
+     font-size:30px;
+    cursor:pointer;
+}
+
+
  nav a {
 
      color: rgb(123, 245, 221);
@@ -74,12 +87,12 @@
      color: #51eeff;
      letter-spacing: 6px;
      background: linear-gradient(#5ad2d8, #ff00ff, #9d00ff);
-      -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    border-bottom: solid rgb(74, 223, 208);
-    border-radius: 20px;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     color: transparent;
+     border-bottom: solid rgb(74, 223, 208);
+     border-radius: 20px;
 
  }
 
@@ -90,11 +103,11 @@
      letter-spacing: 6px;
      align-items: center;
      text-align: center;
-   
+
  }
 
 
- .games{
+ .games {
      padding: 60px 20px;
      display: flex;
      justify-content: center;
@@ -102,42 +115,42 @@
      flex-wrap: wrap;
  }
 
- .game{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
+ .game {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
 
- .game h3{
-    font-family:'Orbitron', monospace;
-    letter-spacing:3px;
-    color:#00f5ff;
-    font-size:40px;
-    border: solid rgb(255, 61, 245);
-    text-align: center;
-    padding: 20px;
-}
+ .game h3 {
+     font-family: 'Orbitron', monospace;
+     letter-spacing: 3px;
+     color: #00f5ff;
+     font-size: 40px;
+     border: solid rgb(255, 61, 245);
+     text-align: center;
+     padding: 20px;
+ }
 
 
 
-  .play-btn{
-    font-family:'Orbitron', monospace;
-    padding:10px 30px;
-    border:none;
-    background:#6d12669a;
-    color:white;
-    cursor:pointer;
-    border-radius:5px;
-    width: 200px;
-    
-    transition:all 0.4s;
-}
+ .play-btn {
+     font-family: 'Orbitron', monospace;
+     padding: 10px 30px;
+     border: none;
+     background: #6d12669a;
+     color: white;
+     cursor: pointer;
+     border-radius: 5px;
+     width: 200px;
 
-.play-btn:hover{
-    background:#ff0eff;
-    transform:scale(1.05);
-}
+     transition: all 0.4s;
+ }
+
+ .play-btn:hover {
+     background: #ff0eff;
+     transform: scale(1.05);
+ }
 
 
  .game-card {
@@ -153,17 +166,17 @@
 
 
  .blackjack {
-    background-image: url(bilder/Blackjack.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.towers{
-    background-image: url(bilder/bombe.jpg);
+     background-image: url(bilder/Blackjack.jpg);
      background-size: cover;
-    background-position: center;
+     background-position: center;
+ }
 
-}
+ .towers {
+     background-image: url(bilder/bombe.jpg);
+     background-size: cover;
+     background-position: center;
+
+ }
 
  .game-card:hover {
      border-radius: solid rgb(100, 208, 220);
@@ -180,6 +193,30 @@
      font-size: 20px;
      font-family: 'Orbitron', monospace;
      color: #00f5ff;
-
-
  }
+
+ .light-mode{
+    background:#ffcece;
+    color:rgb(140, 115, 115);
+}
+
+.light-mode header{
+    background:#ffb8b8;
+    color:black;
+}
+
+.light-mode nav a{
+    background:#e98383;
+    color:black;
+    border:1px solid #999;
+}
+
+.light-mode nav a:hover{
+    background:#ddd;
+    color:black;
+}
+
+.light-mode footer{
+    background:#eaeaea;
+    color:black;
+}

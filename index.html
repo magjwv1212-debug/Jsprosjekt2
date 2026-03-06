@@ -8,8 +8,15 @@
 
 
     <link rel="stylesheet" href="forside.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
     <style>
-       
+
 
 
     </style>
@@ -21,8 +28,15 @@
         <h1>Easy games</h1>
 
         <nav>
+
+            <div class="logoer">
+            <i id="sun" class="fa-solid fa-sun"></i>
+            <i id="moon" class="fa-solid fa-moon"></i>
+            </div>
+
             <a href="">Kontakt oss</a>
             <a href="">Om oss</a>
+           
         </nav>
 
     </header>
@@ -34,32 +48,43 @@
 
     <h2 class="vårespill">Våre Spill</h2>
 
-  <section class="games">
+    <section class="games">
 
-    <div class="game">
-        <h3>Towers</h3>
+        <div class="game">
+            <h3>Towers</h3>
 
-        <div class="game-card towers"></div>
+            <div class="game-card towers"></div>
 
-        <button class="play-btn">Spill nå</button>
-    </div>
-
-    <div class="game">
-        <h3>Blackjack</h3>
-
-        <div class="game-card blackjack"></div>
-
-        <a href="spill1.html">
             <button class="play-btn">Spill nå</button>
-        </a>
-    </div>
+        </div>
 
-</section>
+        <div class="game">
+            <h3>Blackjack</h3>
+
+            <div class="game-card blackjack"></div>
+
+            <a href="spill1.html">
+                <button class="play-btn">Spill nå</button>
+            </a>
+        </div>
+    </section>
 
     <footer id="footer">
         <p>Easy games</p>
     </footer>
-
 </body>
+
+<script>
+    const sun = document.getElementById("sun")
+const moon = document.getElementById("moon")
+
+sun.onclick = function(){
+    document.body.classList.add("light-mode")
+}
+
+moon.onclick = function(){
+    document.body.classList.remove("light-mode")
+}
+</script>
 
 </html>
