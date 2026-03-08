@@ -262,3 +262,26 @@ button {
     margin-top: 3px;
     margin-left: 3px;
 }
+
+
+img:hover {
+
+    transform: scale(1.03);
+}
+
+#penger:hover {
+    text-shadow: 0 0 30px rgba(10, 6, 68, 0.803);
+}
+
+#highscore:hover {
+    transform: scale(1.03);
+    
+
+}
+
+#deg {
+    width: 150px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: 2px;
+}

@@ -25,8 +25,17 @@
         </div>
         <div class="box">
 
-            <div id="sum"> </div>
-            <div class="player"></div>
+
+            <div id="sum">
+
+            </div>
+
+            <div class="player">
+
+            </div>
+            <div id="deg">
+                DEG
+            </div>
         </div>
     </div>
     <div id="bet"></div>
@@ -105,6 +114,7 @@
         let highElm = document.getElementById("highscore")
         let allElm = document.getElementById("allin")
         let halv = document.getElementById("half")
+        let deg = document.getElementById("deg")
         let highscore = 5000
         let sum = 0;
         let sumDeal = 0
@@ -127,6 +137,8 @@
         highElm.style.display = 'none'
         bet.style.display = 'none'
         halv.style.display = 'none'
+        deg.style.display = 'none'
+
 
 
 
@@ -208,6 +220,7 @@
             minus.style.display = 'none'
             pluss.style.display = 'none'
             penger.style.display = 'none'
+            deg.style.display = 'block'
 
 
 
@@ -243,6 +256,7 @@
                     sumBoks.style.display = 'none'
                     sumBoks2.style.display = 'none'
                     resElm.innerHTML = 'TRYKK'
+                    deg.style.display = 'none'
                 } else {
 
                     slide.innerHTML = 'du tapte';
@@ -256,6 +270,7 @@
                     sumBoks.style.display = 'none'
                     sumBoks2.style.display = 'none'
                     penger.style.display = 'none'
+                    deg.style.display = 'none'
 
                 }
 
@@ -279,6 +294,7 @@
                 sumBoks.style.display = 'none'
                 sumBoks2.style.display = 'none'
                 penger.style.display = 'none'
+                deg.style.display = 'none'
 
 
                 hitElm.style.display = 'none'
@@ -325,6 +341,7 @@
                     sumBoks.style.display = 'none'
                     sumBoks2.style.display = 'none'
                     penger.style.display = 'none'
+                    deg.style.display = 'none'
 
 
                     if (money > highscore) {
@@ -342,6 +359,9 @@
                     hitElm.style.display = 'none';
                     penger.innerHTML = money;
                     standElm.style.display = 'none';
+                    deg.style.display = 'none'
+
+
 
 
                     if (money == 0) {
@@ -371,6 +391,7 @@
                         penger.style.display = 'none'
 
 
+
                     }
                 }
                 else if (sumDeal < sum) {
@@ -393,6 +414,7 @@
                     sumBoks.style.display = 'none'
                     sumBoks2.style.display = 'none'
                     penger.style.display = 'none'
+                    deg.style.display = 'none'
 
                     if (money > highscore) {
                         highscore = money;
@@ -419,6 +441,7 @@
                     sumBoks.style.display = 'none'
                     sumBoks2.style.display = 'none'
                     penger.style.display = 'none'
+                    deg.style.display = 'none'
 
 
 
@@ -487,6 +510,7 @@
             penger.style.display = 'block'
             halv.style.display = 'block'
             highElm.style.display = 'block'
+            deg.style.display = 'none'
 
             sum = 0
             sum2 = 0
@@ -567,6 +591,7 @@
             penger.style.display = 'block'
             highElm.style.display = 'block'
             halv.style.display = 'block'
+            deg.style.display = 'none'
 
 
             sum = 0
@@ -611,29 +636,6 @@
                 pluss.style.display = 'block'
             }
         })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
 </body>
 
