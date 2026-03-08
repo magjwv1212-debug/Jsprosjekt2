@@ -1,0 +1,222 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: #0a0a1a;
+     color: rgb(255, 255, 255);
+     font-family: Arial, sans-serif;
+     background-image:
+         linear-gradient(rgba(0, 245, 255, 0.04) 1px, transparent 1px),
+         linear-gradient(90deg, rgba(0, 245, 255, 0.04) 1px, transparent 1px);
+     background-size: 60px 60px;
+ }
+
+ header {
+     background-color: rgba(0, 0, 0, 0.85);
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 40px;
+     align-items: center;
+     color: rgb(100, 208, 220);
+ }
+
+ nav {
+     display: flex;
+     gap: 15px;
+ }
+
+ 
+ .logoer{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logoer i{
+     font-size:30px;
+    cursor:pointer;
+}
+
+
+ nav a {
+
+     color: rgb(123, 245, 221);
+     text-decoration: none;
+     padding: 10px;
+     border: solid rgb(78, 199, 230) 1px;
+     background-color: #11030f;
+     letter-spacing: 2px;
+     transition: all 0.5s;
+
+ }
+
+ nav a:hover {
+     background-color: #00f5ff;
+     color: #000;
+     box-shadow: 0 0 20px #00f5ff88;
+
+ }
+
+ .hero {
+     height: 80vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+ }
+
+ .hero>h1 {
+     font-family: 'Orbitron', monospace;
+     font-size: 40px;
+     font-weight: 10;
+     letter-spacing: 6px;
+     color: rgba(255, 255, 255, 0.7);
+     margin-bottom: 30px;
+ }
+
+ .hero>h2 {
+     font-family: 'Orbitron', monospace;
+     font-size: 130px;
+     font-weight: 900;
+     margin-bottom: 20px;
+     color: #51eeff;
+     letter-spacing: 6px;
+     background: linear-gradient(#5ad2d8, #ff00ff, #9d00ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     color: transparent;
+     border-bottom: solid rgb(74, 223, 208);
+     border-radius: 20px;
+
+ }
+
+ .vårespill {
+     padding: 60px 20px 30px;
+     font-family: 'Orbitron', monospace;
+     font-size: clamp(24px, 4vw, 38px);
+     letter-spacing: 6px;
+     align-items: center;
+     text-align: center;
+
+ }
+
+
+ .games {
+     padding: 60px 20px;
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-wrap: wrap;
+ }
+
+ .game {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .game h3 {
+     font-family: 'Orbitron', monospace;
+     letter-spacing: 3px;
+     color: #00f5ff;
+     font-size: 40px;
+     border: solid rgb(255, 61, 245);
+     text-align: center;
+     padding: 20px;
+ }
+
+
+
+ .play-btn {
+     font-family: 'Orbitron', monospace;
+     padding: 10px 30px;
+     border: none;
+     background: #6d12669a;
+     color: white;
+     cursor: pointer;
+     border-radius: 5px;
+     width: 200px;
+
+     transition: all 0.4s;
+ }
+
+ .play-btn:hover {
+     background: #ff0eff;
+     transform: scale(1.05);
+ }
+
+
+ .game-card {
+     padding: 30px;
+     width: 300px;
+     height: 250px;
+     border: solid rgba(108, 238, 255, 0.347) 1px;
+     border-top: 3px solid #f200ff;
+     text-align: center;
+     transition: all 0.5s;
+ }
+
+
+
+ .blackjack {
+     background-image: url(bilder/Blackjack.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+
+ .towers {
+     background-image: url(bilder/bombe.jpg);
+     background-size: cover;
+     background-position: center;
+
+ }
+
+ .game-card:hover {
+     border-radius: solid rgb(100, 208, 220);
+     border-color: #c230af;
+     transform: translate(0, -8px);
+ }
+
+
+ footer {
+     background: black;
+     padding: 30px;
+     text-align: center;
+     margin-top: 50px;
+     font-size: 20px;
+     font-family: 'Orbitron', monospace;
+     color: #00f5ff;
+ }
+
+ .light-mode{
+    background:#ffcece;
+    color:rgb(140, 115, 115);
+}
+
+.light-mode header{
+    background:#ffb8b8;
+    color:black;
+}
+
+.light-mode nav a{
+    background:#e98383;
+    color:black;
+    border:1px solid #999;
+}
+
+.light-mode nav a:hover{
+    background:#ddd;
+    color:black;
+}
+
+.light-mode footer{
+    background:#eaeaea;
+    color:black;
+}
