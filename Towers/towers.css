@@ -9,9 +9,7 @@ body {
     background-color: #1a2538;
     padding: 15px;
     text-align: center;
-
 }
-
 
 .header a {
     color: #cdd6f4;
@@ -28,6 +26,13 @@ body {
 
 .kontroller {
     margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+    background-color: #2f3f60;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 button {
