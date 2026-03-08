@@ -11,6 +11,7 @@
 
     <header class="header">
         <h1>🟩Towers💣</h1>
+
         <p>
             velg<br>
             vanskelighetsgrad <br> under
@@ -18,7 +19,6 @@
 
         <nav>
             <a href="">Hjem</a>
-           
         </nav>
     </header>
 
@@ -26,6 +26,7 @@
 
         <div class="kontroller">
             <label for="nivaa">Velg nivå:</label>
+
             <select id="nivaa">
                 <option value="lett">Lett (5 ruter)</option>
                 <option value="medium" selected>Medium (3 ruter)</option>
@@ -33,6 +34,12 @@
             </select>
 
             <button id="startBtn">Start spillet</button>
+        </div>
+
+        <div class="info">
+            <p><strong>Poeng:</strong> <span id="poeng">0</span></p>
+            <p><strong>Rad:</strong> <span id="radNr">1</span> / 10</p>
+            <p id="melding">Trykk på start for å begynne</p>
         </div>
 
         <div id="brett" class="brett"></div>

@@ -28,6 +28,13 @@ body {
     margin-bottom: 20px;
 }
 
+.info {
+    margin-bottom: 20px;
+    background-color: #2f3f60;
+    padding: 12px;
+    border-radius: 5px;
+}
+
 button {
     padding: 5px 10px;
     border: none;

@@ -1,12 +1,19 @@
 const brett = document.getElementById("brett");
 const startBtn = document.getElementById("startBtn");
 const nivaa = document.getElementById("nivaa");
+const poengEl = document.getElementById("poeng");
+const radNrEl = document.getElementById("radNr");
+const meldingEl = document.getElementById("melding");
 
 const BREDDER = {
     lett: 5,
     medium: 3,
     vanskelig: 2
 };
+
+poengEl.textContent = 0;
+radNrEl.textContent = 1;
+meldingEl.textContent = "Trykk på start for å begynne";
 
 startBtn.addEventListener("click", startSpill);
 
