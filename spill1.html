@@ -5,250 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
-    <style>
-        img {
-            height: 200px;
-            display: inline-block;
-            margin-right: -100px;
-        }
-
-        .bottom {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 300px;
-            margin: auto;
-            justify-content: center;
-        }
-
-        body {
-            height: 100vh;
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            position: relative;
-            background-image: url(kortstokk-kopi\ 2/felt.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-
-
-        }
-
-
-
-        #Hit {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(0, 0, 0);
-            border-radius: 150px;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-            display: flex;
-            align-content: center;
-            border: 1px solid white;
-
-        }
-
-        #sum {
-            width: 150px;
-            height: 75px;
-            background-color: rgba(0, 0, 0, 0.592);
-            border: 3px solid gray;
-            border-radius: 100px;
-            display: none;
-            font-size: 50px;
-            text-align: center;
-            color: white;
-
-
-        }
-
-        .midt {
-            display: flex;
-            justify-content: center;
-            height: 300px;
-            align-items: center;
-
-        }
-
-        #stand {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(0, 0, 0);
-            border-radius: 150px;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-            display: flex;
-            align-content: center;
-            border: 1px solid white;
-
-        }
-
-        #sum2 {
-            width: 150px;
-            height: 75px;
-            background-color: rgba(0, 0, 0, 0.592);
-            border: 3px solid gray;
-            border-radius: 100px;
-            display: none;
-            font-size: 50px;
-            text-align: center;
-            color: white;
-
-
-        }
-
-        #spill {
-            width: 130px;
-            height: 75px;
-            background-color: rgb(255, 128, 0);
-
-            border-radius: 10px;
-            margin: auto;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-
-
-        }
-
-        #penger {
-            width: 15%;
-            height: 175px;
-            background-color: rgba(56, 61, 61, 0.839);
-            border-radius: 20px;
-
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
-
-        #pluss {
-            width: 15%;
-            height: 175px;
-            background-color: rgba(56, 61, 61, 0.839);
-            border-radius: 20px;
-
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
-
-        #minus {
-            width: 15%;
-            height: 175px;
-            background-color: rgba(56, 61, 61, 0.839);
-            border-radius: 20px;
-
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
-
-
-
-        #bet {
-            width: 15%;
-            height: 175px;
-            background-color: rgba(56, 61, 61, 0.839);
-            border-radius: 20px;
-
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
-
-        .flex {
-            margin: auto;
-
-
-        }
-
-        .box {
-            margin: auto;
-
-        }
-
-        #vant {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-
-            text-align: center;
-            align-content: center;
-            background-color: rgba(0, 0, 0, 0.675);
-            margin-top: -700px;
-            color: rgb(255, 128, 0);
-            font-size: 70px;
-        }
-
-        .deal {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-
-
-        #reset {
-            width: 130px;
-            height: 75px;
-            background-color: rgb(255, 128, 0);
-            border-radius: 10px;
-            margin: auto;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-        }
-
-        #highscore {
-            width: 170px;
-            height: 75px;
-            background-color: rgba(2, 22, 22, 0.805);
-            border-radius: 50px;
-            border: 4px solid gold;
-            font-size: 25px;
-            text-align: center;
-            color: white;
-            margin: auto;
-            margin-top: 50px;
-        }
-
-        #allin {
-            width: 15%;
-            height: 175px;
-            background-color: rgba(56, 61, 61, 0.839);
-            border-radius: 20px;
-            font-size: 50px;
-            text-align: center;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="blackjack.css">
 </head>
 
 <body>
+    <button> <a href="index.html">TILBAKE</a> </button>
     <div id="highscore"></div>
-    <div class="midt">
-        <div id="penger">
-
-        </div>
-        <div id="pluss">+</div>
-        <div id="minus">-</div>
-
-        <div id="bet"></div>
-
-        <div id="velg">
-
-        </div>
-        <div id="allin">
-
-        </div>
-
-
-
-
-    </div>
 
     <div class="bottom">
         <div class="flex">
@@ -263,9 +25,43 @@
         </div>
         <div class="box">
 
-            <div id="sum"></div>
+            <div id="sum"> </div>
             <div class="player"></div>
         </div>
+    </div>
+    <div id="bet"></div>
+    <div class="midt">
+
+
+        <div class="faw">
+
+
+            <div id="minus">-</div>
+            <div id="penger">
+            </div>
+            <div id="pluss">+</div>
+        </div>
+
+        <div class="raw">
+
+            <div id="half">
+                1/2
+
+            </div>
+
+
+            <div id="allin">
+
+                <div id="velg">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
     </div>
     <div id="vant">
 
@@ -274,7 +70,7 @@
 
         <div id="spill"></div>
         <div id="reset">
-            <p>ute av penger</p>
+
 
         </div>
 
@@ -284,6 +80,9 @@
 
 
     <script>
+
+
+
 
         const kortVerdier = {
             1: 1, 2: 2, 3: 3, 4: 4, 5: 5,
@@ -305,6 +104,7 @@
         let penger = document.getElementById("penger")
         let highElm = document.getElementById("highscore")
         let allElm = document.getElementById("allin")
+        let halv = document.getElementById("half")
         let highscore = 5000
         let sum = 0;
         let sumDeal = 0
@@ -312,7 +112,7 @@
         let money = 5000
         let betElm = 0
         penger.innerHTML = money;
-        bet.innerHTML = betElm;
+        bet.innerHTML = betElm + ' - BET ';
         highElm.innerHTML = highscore + ' HIGHSCORE'
         allElm.innerHTML = 'ALL IN'
         slide.style.display = 'none'
@@ -321,6 +121,44 @@
         start.style.display = 'none'
         hitElm.style.display = 'none'
         standElm.style.display = 'none'
+        pluss.style.display = 'none'
+        allElm.style.display = 'none'
+        penger.style.display = 'none'
+        highElm.style.display = 'none'
+        bet.style.display = 'none'
+        halv.style.display = 'none'
+
+
+
+
+
+        slide.innerHTML = 'BLACKJACK'
+        slide.style.display = 'block'
+
+
+        setTimeout(function () {
+
+
+
+
+
+
+            setTimeout(function () {
+                slide.style.display = 'none'
+                pluss.style.display = 'block'
+                allElm.style.display = 'block'
+                penger.style.display = 'block'
+                highElm.style.display = 'block'
+                bet.style.display = 'block'
+                halv.style.display = 'block'
+
+
+
+
+
+            }, 1000)
+
+        }, 500)
 
         sum = 0
         sum2 = 0
@@ -336,6 +174,8 @@
 
         sumBoks.innerHTML = sum;
         sumBoks2.innerHTML = sum2;
+
+
 
 
 
@@ -363,6 +203,11 @@
             standElm.innerHTML = "STAND"
             hitElm.innerHTML = "HIT"
             allElm.style.display = 'none'
+            bet.innerHTML = betElm + ' - Nåværende Bet';
+            halv.style.display = 'none'
+            minus.style.display = 'none'
+            pluss.style.display = 'none'
+            penger.style.display = 'none'
 
 
 
@@ -380,34 +225,64 @@
             sumBoks.innerHTML = sum;
 
             if (sum > 21) {
+                document.querySelectorAll("img").forEach(function (kort) {
+                    kort.style.display = "none";
+                });
+                highElm.style.display = 'none'
                 hitElm.style.display = 'none';
                 penger.innerHTML = money;
                 standElm.style.display = 'none';
 
                 if (money == 0) {
                     slide.style.display = 'block';
-                    slide.appendChild(resElm);
+
                     bet.style.display = 'none';
                     spill.style.display = 'none';
+                    slide.innerHTML = 'UTE AV PENGER'
+                    slide.appendChild(resElm);
+                    sumBoks.style.display = 'none'
+                    sumBoks2.style.display = 'none'
+                    resElm.innerHTML = 'TRYKK'
                 } else {
+
                     slide.innerHTML = 'du tapte';
                     slide.appendChild(spill);
                     slide.style.display = 'block';
                     spill.style.display = 'block';
                     spill.innerHTML = 'SPILL IGJEN';
+                    bet.style.display = 'none'
+                    minus.style.display = 'none'
+                    pluss.style.display = 'none'
+                    sumBoks.style.display = 'none'
+                    sumBoks2.style.display = 'none'
+                    penger.style.display = 'none'
+
                 }
 
             }
             if (sum == 21) {
+                document.querySelectorAll("img").forEach(function (kort) {
+                    kort.style.display = "none";
+                });
+
+                bet.style.display = 'none'
+
+                minus.style.display = 'none'
+                pluss.style.display = 'none'
+                highElm.style.display = 'none'
                 slide.innerHTML = 'BLACKJACK DU VANT +' + betElm * 2
                 slide.appendChild(spill);
                 slide.style.display = 'block'
                 spill.style.display = 'block'
                 standElm.style.display = 'none'
                 spill.innerHTML = 'SPILL IGJEN'
+                sumBoks.style.display = 'none'
+                sumBoks2.style.display = 'none'
+                penger.style.display = 'none'
+
 
                 hitElm.style.display = 'none'
-                money += betElm * 2; // lagre i money
+                money += betElm * 2;
                 penger.innerHTML = money;
 
                 if (money > highscore) {
@@ -431,15 +306,27 @@
 
             setTimeout(function () {
                 if (sumDeal > 21) {
+                    document.querySelectorAll("img").forEach(function (kort) {
+                        kort.style.display = "none";
+                    });
+                    highElm.style.display = 'none'
                     slide.innerHTML = 'DU VANT +' + betElm * 2
                     slide.appendChild(spill);
                     slide.style.display = 'block'
                     spill.style.display = 'block'
                     spill.innerHTML = 'SPILL IGJEN'
                     hitElm.style.display = 'none'
-                    money += betElm * 2; // lagre i money
+                    money += betElm * 2;
                     penger.innerHTML = money;
                     standElm.style.display = 'none'
+                    bet.style.display = 'none'
+                    minus.style.display = 'none'
+                    pluss.style.display = 'none'
+                    sumBoks.style.display = 'none'
+                    sumBoks2.style.display = 'none'
+                    penger.style.display = 'none'
+
+
                     if (money > highscore) {
                         highscore = money;
                         highElm.innerHTML = highscore + ' HIGHSCORE'
@@ -448,49 +335,92 @@
 
 
                 } else if (sumDeal > sum) {
+                    document.querySelectorAll("img").forEach(function (kort) {
+                        kort.style.display = "none";
+                    });
+                    highElm.style.display = 'none'
                     hitElm.style.display = 'none';
                     penger.innerHTML = money;
                     standElm.style.display = 'none';
 
+
                     if (money == 0) {
                         slide.style.display = 'block';
-                        slide.appendChild(resElm);
+
+
                         bet.style.display = 'none';
                         spill.style.display = 'none';
+                        slide.innerHTML = 'UTE AV PENGER'
+                        slide.appendChild(resElm);
+                        sumBoks.style.display = 'none'
+                        sumBoks2.style.display = 'none'
+                        resElm.innerHTML = 'START PÅ NYTT'
+
+
                     } else {
                         slide.innerHTML = 'du tapte';
                         slide.appendChild(spill);
                         slide.style.display = 'block';
                         spill.style.display = 'block';
                         spill.innerHTML = 'SPILL IGJEN';
+                        bet.style.display = 'none'
+                        minus.style.display = 'none'
+                        pluss.style.display = 'none'
+                        sumBoks.style.display = 'none'
+                        sumBoks2.style.display = 'none'
+                        penger.style.display = 'none'
+
+
                     }
                 }
                 else if (sumDeal < sum) {
+                    document.querySelectorAll("img").forEach(function (kort) {
+                        kort.style.display = "none";
+                    });
+                    highElm.style.display = 'none'
                     slide.innerHTML = 'DU VANT +' + betElm * 2
                     slide.appendChild(spill);
                     slide.style.display = 'block'
                     spill.style.display = 'block'
                     spill.innerHTML = 'SPILL IGJEN'
-                    money += betElm * 2; // lagre i money
+                    money += betElm * 2;
                     penger.innerHTML = money;
                     hitElm.style.display = 'none'
                     standElm.style.display = 'none'
+                    bet.style.display = 'none'
+                    minus.style.display = 'none'
+                    pluss.style.display = 'none'
+                    sumBoks.style.display = 'none'
+                    sumBoks2.style.display = 'none'
+                    penger.style.display = 'none'
+
                     if (money > highscore) {
                         highscore = money;
                         highElm.innerHTML = highscore + ' HIGHSCORE'
                     }
 
                 } else {
+                    document.querySelectorAll("img").forEach(function (kort) {
+                        kort.style.display = "none";
+                    });
+                    highElm.style.display = 'none'
                     slide.innerHTML = 'Uavgjort - penger tilbake'
                     slide.appendChild(spill);
                     slide.style.display = 'block'
                     spill.style.display = 'block'
                     spill.innerHTML = 'SPILL IGJEN'
                     hitElm.style.display = 'none'
-                    money += betElm; // lagre i money
+                    money += betElm;
                     penger.innerHTML = money;
-                    penger.innerHTML = money + betElm
                     standElm.style.display = 'none'
+                    bet.style.display = 'none'
+                    minus.style.display = 'none'
+                    pluss.style.display = 'none'
+                    sumBoks.style.display = 'none'
+                    sumBoks2.style.display = 'none'
+                    penger.style.display = 'none'
+
+
 
 
                 }
@@ -554,6 +484,9 @@
             bet.style.display = 'block'
             slide.style.display = 'none'
             allElm.style.display = 'block'
+            penger.style.display = 'block'
+            halv.style.display = 'block'
+            highElm.style.display = 'block'
 
             sum = 0
             sum2 = 0
@@ -572,16 +505,16 @@
         minus.addEventListener("click", function () {
             money += 100;
             betElm -= 100;
-            bet.innerHTML = betElm;
+            bet.innerHTML = betElm + ' - NÅVÆERENDE BET';
             penger.innerHTML = money;
 
 
-            if (betElm == 0) {
+            if (betElm <= 0) {
                 minus.style.display = 'none';
                 hitElm.style.display = 'none'
             }
             if (money > 0) {
-                pluss.style.display = 'block'; // vis pluss igjen når man har penger
+                pluss.style.display = 'block';
             }
 
         });
@@ -589,7 +522,7 @@
         pluss.addEventListener("click", function () {
             money -= 100;
             betElm += 100;
-            bet.innerHTML = betElm;
+            bet.innerHTML = betElm + ' - NÅVÆRENDE BET';
             penger.innerHTML = money;
 
             minus.style.display = 'block';
@@ -631,6 +564,9 @@
             penger.innerHTML = money
             resElm.style.display = 'none'
             allElm.style.display = 'block'
+            penger.style.display = 'block'
+            highElm.style.display = 'block'
+            halv.style.display = 'block'
 
 
             sum = 0
@@ -644,9 +580,9 @@
         })
 
         allElm.addEventListener("click", function () {
-
-            bet.innerHTML = betElm + money
-            money -= money
+            betElm += money
+            bet.innerHTML = betElm
+            money = 0
             penger.innerHTML = money
 
             allElm.style.display = 'none'
@@ -654,6 +590,26 @@
             pluss.style.display = 'none'
             minus.style.display = 'none'
             hitElm.style.display = 'block'
+            halv.style.display = 'none'
+        })
+
+        halv.addEventListener("click", function () {
+            money = Math.floor(money / 2)
+            betElm += money
+            bet.innerHTML = betElm
+            penger.innerHTML = money
+
+            minus.style.display = 'block'
+            hitElm.style.display = 'block'
+
+
+            if (money <= 0) {
+                pluss.style.display = 'none'
+                halv.style.display = 'none'
+            }
+            if (money > 0) {
+                pluss.style.display = 'block'
+            }
         })
 
 
