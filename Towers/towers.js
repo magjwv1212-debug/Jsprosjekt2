@@ -48,17 +48,28 @@ function lagBrett(bredde) {
     for (let rad = 0; rad < 10; rad++) {
         const radDiv = document.createElement("div");
         radDiv.className = "rad";
-
         radDiv.style.gridTemplateColumns = `repeat(${bredde}, 1fr)`;
 
         for (let kolonne = 0; kolonne < bredde; kolonne++) {
             const knapp = document.createElement("button");
             knapp.className = "rute";
             knapp.textContent = "?";
+            knapp.dataset.rad = rad;
+            knapp.dataset.kolonne = kolonne;
+
+            knapp.addEventListener("click", knappTrykket);
 
             radDiv.appendChild(knapp);
         }
 
         brett.appendChild(radDiv);
     }
+}
+
+function knappTrykket(event) {
+    const knapp = event.target;
+    const rad = Number(knapp.dataset.rad);
+    const kolonne = Number(knapp.dataset.kolonne);
+
+    meldingEl.textContent = "Du trykket rad " + (rad + 1) + ", knapp " + (kolonne + 1);
 }
