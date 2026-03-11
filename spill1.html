@@ -201,6 +201,9 @@
         const playerContainer = document.querySelector(".player")
 
 
+
+
+
         hitElm.addEventListener("click", function () {
             const tilfTall = Math.floor(Math.random() * 13) + 1
             const suits = ["spades", "hearts", "clubs", "diamonds"]
@@ -215,7 +218,7 @@
             standElm.innerHTML = "STAND"
             hitElm.innerHTML = "HIT"
             allElm.style.display = 'none'
-            bet.innerHTML = betElm + ' - Nåværende Bet';
+            bet.innerHTML = betElm + ' - NÅVÆRENDE BET';
             halv.style.display = 'none'
             minus.style.display = 'none'
             pluss.style.display = 'none'
@@ -315,6 +318,7 @@
 
 
         })
+
 
         standElm.addEventListener("click", function () {
             dealerCard()
@@ -448,7 +452,7 @@
 
                 }
 
-            }, 1700);
+            }, 2000);
 
         });
 
