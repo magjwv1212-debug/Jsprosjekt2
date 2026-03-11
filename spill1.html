@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <button> <a href="index.html">TILBAKE</a> </button>
+    <a href="index.html"><button> TILBAKE</button></a>
     <div id="highscore"></div>
 
     <div class="bottom">
@@ -246,7 +246,7 @@
                 penger.innerHTML = money;
                 standElm.style.display = 'none';
 
-                if (money == 0) {
+                if (money <= 0) {
                     slide.style.display = 'block';
 
                     bet.style.display = 'none';
@@ -364,7 +364,7 @@
 
 
 
-                    if (money == 0) {
+                    if (money <= 0) {
                         slide.style.display = 'block';
 
 
@@ -570,7 +570,7 @@
                 kort.style.display = "none";
             });
             spill.style.display = "none";
-            hitElm.innerHTML = ' HIT'
+            hitElm.innerHTML = ' DEAL'
             start.style.display = 'none'
             standElm.style.display = 'none'
             hitElm.style.display = 'none'
@@ -586,7 +586,7 @@
             start.style.display = 'none'
             money = 5000
             penger.innerHTML = money
-            resElm.style.display = 'none'
+            //resElm.style.display = 'none'
             allElm.style.display = 'block'
             penger.style.display = 'block'
             highElm.style.display = 'block'
